@@ -1,19 +1,13 @@
-# REI — İndirmeler
+# REI 2 — Windows indirmeleri
 
-REI kişisel asistanının Windows ve Android dağıtım sayfası.
-Uygulama kaynak kodu bu depoda yayımlanmaz.
+REI'nin yeni masaüstü temeli **AionUi + AionCore**. Eski REI 1.x / Qt sürümünün yerine bu ürün geliştiriliyor.
 
-## İndir
+**[REI 2.0.0-beta.1 indir](https://github.com/jagwey/rei-releases/releases/tag/v2.0.0-beta.1)**
 
-[Windows 2.0 deneme sürümü](https://github.com/jagwey/rei-releases/releases/tag/v2.0.0-alpha.2)
+`REI-Portable-2.0.0-beta.1.zip` dosyasını tamamen çıkar ve `REI/REI.exe` dosyasını aç. Electron ve arka uç paketin içindedir; Python kurulumu gerekmez. Bu yayın taşınabilir uygulamadır, kurulum sihirbazı içermez. Eski REI ayarların silinmez; yeni uygulama ayrı `REI-2` profili kullanır.
 
-Taşınabilir ZIP'i tamamen çıkarıp `REI/REI.exe` dosyasını aç. `_internal`
-klasörü yanında kalmalı. Eski REI'yi önce tepsi simgesinden tamamen kapat.
-Kurulum EXE'si mevcut kurulumu değiştirebilir. Python kurulumu gerekmez.
+AionUi'nin sohbet, ajan ve Teams ekranları ile REI salt okunur MCP köprüsü bulunur. Ajan kullanmak için kendi sağlayıcı hesabını/CLI kurulumunu veya model bağlantını ayarlaman gerekir. Gerçek hesapla model görevi henüz doğrulanmadı. Ses, el takibi, Windows/tarayıcı eylemleri ve Arduino bu yeni sürüme bağlanmadı; beta yayın notlarındaki sınırları oku.
 
-Bu 2.0 Faz 1 ön sürümüdür. Gerçek hesap ve cihaz denemeleri ayrıca yapılmalıdır.
-Windows ve Android sürümleri ayrı etiketlerle dağıtılır. SHA-256 özetleri sürüm
-varlıklarında bulunur. Üçüncü taraf lisansları uygulama paketinde korunur.
+Gerçek paket açılışı, paket içindeki arka uç ve MCP araç bağlantısı Windows'ta test edildi. SHA-256 özetleri ve doğrulama notu sürüm dosyaları arasındadır. Arayüz AionUi atıflarını korur. AionUi/AionCore Apache-2.0 lisansları ve diğer lisans bildirimleri paket içinde tutulur.
 
-Bu depoda geliştirme kodu, API anahtarları, kullanıcı ayarları veya kaynak ZIP'i
-bulunmaz. GitHub'ın otomatik kaynak arşivleri yalnızca bu dağıtım sayfasını içerir.
+Bu depo yalnızca indirme sayfası ve dağıtım dosyaları içerir. Özel REI kaynakları, API anahtarları ve kullanıcı verileri burada yayımlanmaz. GitHub'ın otomatik kaynak arşivleri uygulamanın tam kaynak kodu değildir. Android ayrı ürün olarak korunur.
