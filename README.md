@@ -1,13 +1,20 @@
-# REI 2 — Windows indirmeleri
+# REI 3.0.2 — Windows ve Android Uygulama İndirmeleri
 
-REI'nin yeni masaüstü temeli **AionUi + AionCore**. Eski REI 1.x / Qt sürümünün yerine bu ürün geliştiriliyor.
+**REI**, Windows 11 için yerel Python/PySide6 ile geliştirilmiş **%100 Türkçe** kişisel masaüstü yapay zekâ asistanı, komuta merkezi, **60 FPS kamera/el kontrolü** ve **Kaedehara Kazuha** masaüstü maskotu uygulamasıdır. Doğrudan yerel REI.exe olarak çalışır (tarayıcı sarmalayıcısı değildir).
 
-**[REI 2.0.0-beta.1 indir](https://github.com/jagwey/rei-releases/releases/tag/v2.0.0-beta.1)**
+## Son Sürüm: [REI 3.0.2 (Kararlı / Latest)](https://github.com/jagwey/rei-releases/releases/tag/v3.0.2)
 
-`REI-Portable-2.0.0-beta.1.zip` dosyasını tamamen çıkar ve `REI/REI.exe` dosyasını aç. Electron ve arka uç paketin içindedir; Python kurulumu gerekmez. Bu yayın taşınabilir uygulamadır, kurulum sihirbazı içermez. Eski REI ayarların silinmez; yeni uygulama ayrı `REI-2` profili kullanır.
+- **Kurulum sihirbazı (önerilen):** [REI-Setup-3.0.2.exe](https://github.com/jagwey/rei-releases/releases/download/v3.0.2/REI-Setup-3.0.2.exe) — Windows kullanıcı hesabına (%LOCALAPPDATA%\Programs\REI) kurulur, yönetici izni gerektirmez.
+- **Taşınabilir paket:** [REI-Portable-3.0.2.zip](https://github.com/jagwey/rei-releases/releases/download/v3.0.2/REI-Portable-3.0.2.zip) — Arşivi tamamen çıkarıp REI/REI.exe dosyasını _internal klasörüyle birlikte çalıştırın.
+- **Android eşlikçi:** [REI-Android-1.2.4.apk](https://github.com/jagwey/rei-releases/releases/download/v3.0.2/REI-Android-1.2.4.apk) — İmzalı com.jagwey.rei.companion APK.
+- **Doğrulama & Bütünlük:** [erification.txt](https://github.com/jagwey/rei-releases/releases/download/v3.0.2/verification.txt) · [SHA256SUMS.txt](https://github.com/jagwey/rei-releases/releases/download/v3.0.2/SHA256SUMS.txt)
 
-AionUi'nin sohbet, ajan ve Teams ekranları ile REI salt okunur MCP köprüsü bulunur. Ajan kullanmak için kendi sağlayıcı hesabını/CLI kurulumunu veya model bağlantını ayarlaman gerekir. Gerçek hesapla model görevi henüz doğrulanmadı. Ses, el takibi, Windows/tarayıcı eylemleri ve Arduino bu yeni sürüme bağlanmadı; beta yayın notlarındaki sınırları oku.
+## Bu Sürümdeki Yenilikler (3.0.2)
 
-Gerçek paket açılışı, paket içindeki arka uç ve MCP araç bağlantısı Windows'ta test edildi. SHA-256 özetleri ve doğrulama notu sürüm dosyaları arasındadır. Arayüz AionUi atıflarını korur. AionUi/AionCore Apache-2.0 lisansları ve diğer lisans bildirimleri paket içinde tutulur.
+- **Kaedehara Kazuha Masaüstü Maskotu ve Uygulama İkonu:** 13 animasyon grubu ve 56 şeffaf 128×128 piksel kare (idle, walk, 
+un, 	alk, 	hink, sleep, wind_jump, all, plunge, glide, climb, urst, leaf_flute). wind_jump (Chihayaburu E yeteneği) 5 aşamalı rüzgâr yükselişi ve inişiyle pencere hareketini senkronize eder. Varsayılan karakter boyu 88 px olup Ayarlar → Karakter bölümünden değiştirilebilir; pencere, görev çubuğu, sistem tepsisi ve kısayolların tamamı kazuha.ico kullanır.
+- **%100 Türkçe Arayüz ve Kurulum:** Çalışma alanı, HUD kontrol paneli, tüm ayar sekmeleri (1.345 katalog girişi), Google/API entegrasyonları ve Inno Setup sihirbazı tamamen Türkçe.
+- **60 FPS Hızlı Kamera ve El Kontrolü:** Adaptif OneEuro filtresi, hızlı harekette ölü bölge atlama, 1–2 kare kayıp telafisi ve **Hızlı / Dengeli** takip modu. Kamera görüntüleri bilgisayardan dışarı gönderilmez.
+- **Bağlantılar ve Ajanlar:** Google Takvim/Gmail/Drive/Kişiler/Tasks, Spotify, YouTube Music, Telegram, Discord, WhatsApp Web, X, GitHub, yerel OpenJarvis, Android köprüsü ve Claude Code / Codex / Gemini / Groq / OpenRouter / Ollama desteği.
 
-Bu depo yalnızca indirme sayfası ve dağıtım dosyaları içerir. Özel REI kaynakları, API anahtarları ve kullanıcı verileri burada yayımlanmaz. GitHub'ın otomatik kaynak arşivleri uygulamanın tam kaynak kodu değildir. Android ayrı ürün olarak korunur.
+> Bu depo yalnızca herkese açık uygulama indirme paketlerini, SHA-256 özetlerini ve doğrulama belgelerini barındırır; özel kaynak kodu jagwey/rei deposundadır. Paketler kod imzalama sertifikası içermediğinden Windows SmartScreen uyarısı gösterebilir.
